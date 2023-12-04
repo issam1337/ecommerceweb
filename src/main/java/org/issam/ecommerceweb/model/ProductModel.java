@@ -334,9 +334,9 @@ public class ProductModel {
         ArrayList<Product> list = new ArrayList();
         try {
             con = db.openConnection();
-            pst = con.prepareStatement("select * from product ORDER BY id DESC LIMIT ? , ?");
-            pst.setInt(1, start);
-            pst.setInt(2, limit);
+            pst = con.prepareStatement("select * from product ORDER BY id DESC LIMIT ? OFFSET ?");
+            pst.setInt(1, limit);
+            pst.setInt(2, start);
             Product p;
             rs = pst.executeQuery();
             
@@ -368,10 +368,10 @@ public class ProductModel {
         ArrayList<Product> list = new ArrayList();
         try {
             con = db.openConnection();
-            pst = con.prepareStatement("select * from product where category_id=? ORDER BY id DESC LIMIT ? , ?");
+            pst = con.prepareStatement("select * from product where category_id=? ORDER BY id DESC LIMIT ? OFFSET ?");
             pst.setInt(1, categoryId);
-            pst.setInt(2, start);
-            pst.setInt(3, limit);
+            pst.setInt(2, limit);
+            pst.setInt(3, start);
             Product p;
             rs = pst.executeQuery();
             while (rs.next()) {
