@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ecommerceweb.iml" filepath="$PROJECT_DIR$/ecommerceweb.iml" />
       <module fileurl="file://$PROJECT_DIR$/yourcart.iml" filepath="$PROJECT_DIR$/yourcart.iml" />
     </modules>
   </component>

@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org</groupId>
-    <artifactId>yourcart</artifactId>
+    <artifactId>ecommerceweb</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>yourcart</name>
+    <name>ecommerceweb</name>
     <packaging>war</packaging>
 
     <properties>
