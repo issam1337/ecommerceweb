@@ -55,8 +55,8 @@ public class changemodel {
 
             pst.setString(1, obj.getCard_number());
             pst.setInt(2, obj.getValue());
-            pst.setInt(3, obj.getUsed());
-            pst.setInt(4, obj.getTaken());
+            pst.setBoolean(3, obj.getUsed() == 0 ? false : true);
+            pst.setBoolean(4, obj.getTaken() == 0 ? false : true);
 
             i = pst.executeUpdate();
 
@@ -82,7 +82,7 @@ public class changemodel {
 
         try {
             con = db.openConnection();
-            pst = con.prepareStatement("select count(card_number) as count from charge where value=? and used=0 and taken= 0 ");
+            pst = con.prepareStatement("select count(card_number) as count from charge where value=? and used=false and taken= false ");
 
             pst.setInt(1, value);
             rs = pst.executeQuery();
@@ -147,7 +147,7 @@ public class changemodel {
     public String getCard(int value) {
         try {
             con = db.openConnection();
-            pst = con.prepareStatement("select card_number from charge where  value=? AND used=0  ");
+            pst = con.prepareStatement("select card_number from charge where  value=? AND used=false  ");
 
             pst.setInt(1, value);
             rs = pst.executeQuery();
@@ -191,7 +191,7 @@ public class changemodel {
     public boolean setCardTaken(String number) {
         try {
             con = db.openConnection();
-            pst = con.prepareStatement("update charge set taken=1 where  card_number=?  ");
+            pst = con.prepareStatement("update charge set taken=true where  card_number=?  ");
 
             pst.setString(1, number);
             int i = pst.executeUpdate();
@@ -239,7 +239,7 @@ public class changemodel {
         try {
             
             con = db.openConnection();
-            pst = con.prepareStatement("select SUM(value) AS profit from charge where taken=1");
+            pst = con.prepareStatement("select SUM(value) AS profit from charge where taken=true");
 
            
             rs = pst.executeQuery();

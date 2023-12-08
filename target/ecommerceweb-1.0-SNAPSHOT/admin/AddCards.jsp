@@ -15,7 +15,7 @@
 
 <div class="col-sm-6 padding-right">
 
-    <h3 color="#fe980f">New Card</h3>
+    <h3 color="#A5E3B9">New Card</h3>
 
     <div class="table-responsive cart_info">
 

@@ -60,7 +60,7 @@ public class Profile extends HttpServlet {
             newUser.setPassword(request.getParameter("password"));
             newUser.setAddress(request.getParameter("address"));
             newUser.setJob(request.getParameter("job"));
-            newUser.setCreditCard(request.getParameter("creditcard"));
+            newUser.setCreditCard(request.getParameter("creaditCard"));
 
             //-------------- upload photo ------------------
             Part filePart = request.getPart("image");

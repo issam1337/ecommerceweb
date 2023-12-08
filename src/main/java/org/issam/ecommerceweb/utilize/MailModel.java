@@ -7,6 +7,13 @@ import javax.mail.Transport;
 import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
+import java.security.KeyManagementException;
+import java.security.NoSuchAlgorithmException;
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
 import java.util.Properties;
 
 /**
@@ -23,8 +30,8 @@ public class MailModel {
     private MimeMessage generateMailMessage;
 
     //-------------- local vars ------------------
-    final private String SENDER_MAIL = "voidchatteam@gmail.com";
-    final private String PASSWORD = "ITIintake37";
+    final private String SENDER_MAIL = "kamalsidki.dev@gmail.com.com";
+    final private String PASSWORD = "kamal100jklmaz";
     final private String SMTP = "smtp.gmail.com";
 
     //-------------- object vars ------------------
@@ -38,6 +45,27 @@ public class MailModel {
         this.emailBody = emailBody;
     }
 
+    // Ajout de votre TrustManager personnalisé
+    private TrustManager[] trustManagers = new TrustManager[]{
+            new X509TrustManager() {
+                @Override
+                public void checkClientTrusted(X509Certificate[] chain, String authType) {
+                    // Implémentez si nécessaire
+                }
+
+                @Override
+                public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+                    // Implémentez vos propres vérifications du certificat ici
+                    // Par exemple, comparez le certificat avec vos attentes
+                }
+
+                @Override
+                public X509Certificate[] getAcceptedIssuers() {
+                    return null;
+                }
+            }
+    };
+
     public boolean sendMail() {
         try {
 
@@ -46,6 +74,14 @@ public class MailModel {
             mailServerProperties.put("mail.smtp.port", "587");
             mailServerProperties.put("mail.smtp.auth", "true");
             mailServerProperties.put("mail.smtp.starttls.enable", "true");
+            // Configurer le SSLContext avec votre TrustManager
+            SSLContext sslContext = SSLContext.getInstance("TLS");
+            try {
+                sslContext.init(null, trustManagers, null);
+            } catch (KeyManagementException e) {
+                e.printStackTrace();
+            }
+            mailServerProperties.put("mail.smtp.ssl.socketFactory", sslContext.getSocketFactory());
 
 
             //-------------- get Mail Session ------------------
@@ -70,6 +106,8 @@ public class MailModel {
         } catch (MessagingException ex) {
             ex.printStackTrace();
             return false;
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
         }
         return true;
 

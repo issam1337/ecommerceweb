@@ -53,7 +53,7 @@
                     <label>Job</label>
                     <input type="text" placeholder="Job"  class="input-field" name="job" id="editJob" value="${userInfo.job}"/>
                     <label>Credit Card</label>
-                    <input type="text" placeholder="Credit Card"  class="input-field" name="creditcard" id="SignupCreditCard" value="${userInfo.creditCard}" required/>
+                    <input type="text" placeholder="Credit Card"  class="input-field" name="creaditCard" id="SignupCreditCard" value="${userInfo.creditCard}" required/>
                     <input type="hidden" name="id" value="${userInfo.userId}" />
                     <input type="hidden" name="photo" value="${photoscr}"/>
 

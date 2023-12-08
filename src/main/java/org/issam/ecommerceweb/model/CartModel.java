@@ -61,11 +61,11 @@ public class CartModel extends DbConnection {
             con = openConnection();
             PreparedStatement pst = null;
             System.out.println("my con" + con);
-            pst = con.prepareStatement("insert into cart (id,user_id,product_id,quantity)Values (?,?,?,?)");
-            pst.setInt(1, cart.getCartId());
-            pst.setInt(2, cart.getUserId());
-            pst.setInt(3, cart.getProductId());
-            pst.setInt(4, cart.getQuantity());
+            pst = con.prepareStatement("insert into cart (user_id,product_id,quantity)Values (?,?,?)");
+           // pst.setInt(1, cart.getCartId());
+            pst.setInt(1, cart.getUserId());
+            pst.setInt(2, cart.getProductId());
+            pst.setInt(3, cart.getQuantity());
             int executeUpdate = pst.executeUpdate();
             closeConnection();
             if (executeUpdate > 0) {
@@ -174,19 +174,19 @@ public class CartModel extends DbConnection {
         ArrayList<CartProduct> carts = new ArrayList<CartProduct>();
         try {
             con = openConnection();
-            PreparedStatement pst = con.prepareStatement("select c.id,c.quantity,p.name,p.price,p.photo,p.descriptin,p.id ,p.quantity from cart as c, product as p where c.product_id=p.id AND c.user_id=? ");
+            PreparedStatement pst = con.prepareStatement("select c.id,c.quantity as cquantity,p.name,p.price,p.photo,p.descriptin,p.id as pid ,p.quantity as pquantity from cart as c, product as p where c.product_id=p.id AND c.user_id=? ");
             pst.setInt(1, userId);
             rs = pst.executeQuery();
             while (rs.next()) {
                 CartProduct cartProduct = new CartProduct();
                 cartProduct.setCartId(rs.getInt("id"));
-                cartProduct.setQuantity(rs.getInt("quantity"));
+                cartProduct.setQuantity(rs.getInt("cquantity"));
                 cartProduct.setName(rs.getString("name"));
                 cartProduct.setPrice(rs.getInt("price"));
                 cartProduct.setPhoto(rs.getString("photo"));
                 cartProduct.setDiscriptin(rs.getString("descriptin"));
-                cartProduct.setProductId(rs.getInt("id"));
-                cartProduct.setQuantity_product(rs.getInt("quantity"));
+                cartProduct.setProductId(rs.getInt("pid"));
+                cartProduct.setQuantity_product(rs.getInt("pquantity"));
 
                 carts.add(cartProduct);
             }

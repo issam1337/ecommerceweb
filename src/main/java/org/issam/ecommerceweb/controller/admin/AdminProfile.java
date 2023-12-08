@@ -68,7 +68,7 @@ public class AdminProfile extends HttpServlet {
         user.setPassword(request.getParameter("password"));
         user.setAddress(request.getParameter("address"));
         user.setJob(request.getParameter("job"));
-        user.setCreditCard(request.getParameter("creditcard"));
+        user.setCreditCard(request.getParameter("creaditCard"));
         user.setUserId(Integer.parseInt(request.getParameter("id")));
         user.setRole("user");
 System.out.println("Test1-----------------------------");
