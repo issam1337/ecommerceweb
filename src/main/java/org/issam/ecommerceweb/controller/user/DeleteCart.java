@@ -12,10 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 
-/**
- * delete cart from user cart in DB
- * @author OsamaPC & sara
- */
+
 @WebServlet("/DeleteCart")
 public class DeleteCart extends HttpServlet {
  CartModel cartModel;

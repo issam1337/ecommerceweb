@@ -13,10 +13,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Random;
 
-/**
- * generate cards
- * @author Nesmaa
- */
+
 
 
 @WebServlet(name = "ChangeCards", urlPatterns = {"/admin/ChangeCards"})
@@ -33,7 +30,7 @@ public class ChangeCards extends HttpServlet {
             int i = 0;
              boolean found=false;
 
-        // get  data from jsp 
+
         int numberOfCards = Integer.parseInt(request.getParameter("numberofcard"));
         System.out.println(numberOfCards);
 
@@ -65,9 +62,9 @@ public class ChangeCards extends HttpServlet {
         } while (i < numberOfCards);
         if(found)
         {
-            //set alert message
+
             request.getSession().setAttribute("AlertMessage", "Cards Added Successfully");
-            //set alert type
+
             request.getSession().setAttribute("AlertType", "success");
             response.sendRedirect("charge.jsp");
         }
@@ -87,7 +84,6 @@ public class ChangeCards extends HttpServlet {
         StringBuffer number = new StringBuffer();
 
         while (number.length() < numSize) {
-            // Generates a random number between 0x10 and 0x99
             int myRandomNumber = rand.nextInt(0x99) + 0x10;
             number.append(Integer.toHexString(myRandomNumber));
         }

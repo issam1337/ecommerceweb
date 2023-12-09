@@ -1,10 +1,4 @@
-<%-- 
-    Document   : checkout
-    Created on : Feb 28, 2017, 10:43:47 PM
-    Author     : MotYim
---%>
 
-<%-- include header file --%> 
 <%@include file="header.jsp" %>
 <%@ page import="org.issam.ecommerceweb.controller.user.CartHandlerServlet" %>
 
@@ -112,7 +106,7 @@
             <a class="btn btn-primary" href="Pay">Pay</a>
         </div>
     </div>
-</section> <!--/#cart_items-->
+</section>
 
-<%-- include footer file --%> 
+
 <%@include file="footer.jsp" %>

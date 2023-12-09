@@ -1,9 +1,6 @@
 package org.issam.ecommerceweb.model;
 
-/**
- *
- * @author OsamaPC
- */
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
@@ -24,7 +21,6 @@ public class DbConnection {
 
         try {
 
-            //access properties file
             ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
             InputStream input = classLoader.getResourceAsStream("config.properties");
 
@@ -44,8 +40,6 @@ public class DbConnection {
         try {
 
             Class.forName("org.postgresql.Driver");
-
-            //connect to DB
             con = DriverManager.getConnection(
                     url,
                     user,

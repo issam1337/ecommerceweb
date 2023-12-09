@@ -1,15 +1,9 @@
-<%-- 
-    Document   : products
-    Created on : Feb 28, 2017, 11:39:20 PM
-    Author     : MotYim
---%>
 
-<%-- include header file --%>
 
 <%@ page import="org.issam.ecommerceweb.controller.admin.AdminProductServlet" %>
 <%@include file="header.jsp" %>
 
-<%-- include slidebar file --%> 
+
 <%@include file="slidebar.jsp" %>
 
 <div class="col-sm-9 padding-right">
@@ -68,9 +62,9 @@
 </div>
 </div>
 </div>
-</section> <!--/#cart_items-->
+</section>
 
-<%-- include footer file --%> 
+
 <%@include file="footer.jsp" %>
-<%-- include notify file --%> 
+
 <%@include file="notify.jsp" %>

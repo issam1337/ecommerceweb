@@ -4,10 +4,7 @@ import javax.servlet.annotation.WebListener;
 import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionListener;
 
-/**
- *
- * @author MotYim
- */
+
 @WebListener
 public class SessionHandler implements HttpSessionListener{
 

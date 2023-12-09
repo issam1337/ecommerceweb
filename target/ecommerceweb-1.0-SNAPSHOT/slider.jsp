@@ -1,15 +1,10 @@
-<%-- 
-    Document   : slider
-    Created on : Feb 28, 2017, 10:21:18 PM
-    Author     : MotYim
---%>
+
  <jsp:include page="/SliderIndex"/>
-<section id="slider"><!--slider-->
+<section id="slider">
     <div class="container">
         <div class="row">
             <c:if test="${not empty slides}">
                 <div class="col-sm-12">
-                <!-- include slides-->
                
                 <div id="slider-carousel" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -62,4 +57,4 @@
             </c:if>
         </div>
     </div>
-</section><!--/slider-->
+</section>

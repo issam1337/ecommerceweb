@@ -1,11 +1,10 @@
 
-<%-- include header file --%> 
+
 <%@include file="header.jsp" %>
 
-<%-- include slidebar file --%> 
+
 <%@include file="slidebar.jsp" %>
 
-<%-- include myTags library --%> 
 <%@taglib prefix="lib" uri="/WEB-INF/tlds/myTags_library.tld" %>
 
 <c:if test="${empty requestScope.type}">
@@ -24,7 +23,7 @@
 </c:choose>
 
 <div class="col-sm-9 padding-right">
-    <div class="product-details"><!--product-details-->
+    <div class="product-details">
         <div class="col-sm-4">
             <div class="view-product">
                 <img src="${photo}"  id="imageView" alt="" />
@@ -54,9 +53,9 @@
                 </form>
 
 
-            </div><!--/product-information-->
+            </div>
         </div>
-    </div><!--/product-details-->
+    </div>
 
 
 

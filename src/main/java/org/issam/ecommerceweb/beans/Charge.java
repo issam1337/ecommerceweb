@@ -1,9 +1,6 @@
 package org.issam.ecommerceweb.beans;
 
-/**
- *
- * @author Nesmaa
- */
+
 public class Charge {
     private String  card_number;
     private int value;

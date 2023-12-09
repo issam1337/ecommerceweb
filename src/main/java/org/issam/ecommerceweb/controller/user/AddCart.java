@@ -13,10 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 
-/**
- * add cart object to user cart DB
- * @author MotYim
- */
+
 @WebServlet("/addCart")
 public class AddCart extends HttpServlet {
 
@@ -28,7 +25,6 @@ public class AddCart extends HttpServlet {
        
         int pID = Integer.parseInt(request.getParameter("productID"));
         int qaunty = Integer.parseInt(request.getParameter("qaunty"));
-        //get login user id
         User user = (User) request.getSession().getAttribute("LoginUser");
         
         Cart car = new Cart();

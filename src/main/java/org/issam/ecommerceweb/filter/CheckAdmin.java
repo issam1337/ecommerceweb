@@ -8,25 +8,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * 
- * @author MotYim
- */
+
 @WebFilter(filterName = "CheckAdmin",urlPatterns = {"/admin/*"})
 public class CheckAdmin implements Filter {
 
     public CheckAdmin() {
     }
 
-    /**
-     *
-     * @param request The servlet request we are processing
-     * @param response The servlet response we are creating
-     * @param chain The filter chain we are processing
-     *
-     * @exception IOException if an input/output error occurs
-     * @exception ServletException if a servlet error occurs
-     */
+
     @Override
     public void doFilter(ServletRequest request, ServletResponse response,
             FilterChain chain)
@@ -42,9 +31,7 @@ public class CheckAdmin implements Filter {
 
     }
 
-    /**
-     * Destroy method for this filter
-     */
+
     @Override
     public void destroy() {
     }

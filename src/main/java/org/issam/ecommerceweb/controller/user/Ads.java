@@ -11,10 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * get new random ads to display in sliderbar
- * @author MotYim
- */
+
 @WebServlet(name = "Ads", urlPatterns = {"/Ads"})
 public class Ads extends HttpServlet {
 
@@ -29,14 +26,10 @@ public class Ads extends HttpServlet {
     }
 
    
-    /**
-     * Returns a short description of the servlet.
-     *
-     * @return a String containing servlet description
-     */
+
     @Override
     public String getServletInfo() {
         return "Short description";
-    }// </editor-fold>
+    }
 
 }

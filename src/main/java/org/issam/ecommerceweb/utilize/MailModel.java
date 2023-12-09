@@ -16,22 +16,17 @@ import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
 import java.util.Properties;
 
-/**
- * ClassName : JavaMailAPI.java Description : send mail with java mail API
- *
- * @author MotYim
- * @since 16-02-2017
- */
+
 public class MailModel {
 
-    //-------------- Mail API vars ------------------
+
     private Properties mailServerProperties;
     private Session getMailSession;
     private MimeMessage generateMailMessage;
 
     //-------------- local vars ------------------
     final private String SENDER_MAIL = "kamalsidki.dev@gmail.com.com";
-    final private String PASSWORD = "kamal100jklmaz";
+    final private String PASSWORD = "";
     final private String SMTP = "smtp.gmail.com";
 
     //-------------- object vars ------------------

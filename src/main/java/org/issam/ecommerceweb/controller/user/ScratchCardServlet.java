@@ -1,9 +1,6 @@
 package org.issam.ecommerceweb.controller.user;
 
-/**
- * handle get card number and send via mail
- * @author sara metwalli
- */
+
 
 import org.issam.ecommerceweb.beans.User;
 import org.issam.ecommerceweb.model.changemodel;
@@ -41,7 +38,6 @@ public class ScratchCardServlet extends HttpServlet {
                     request.setAttribute("showGoToCharge", true);
                     String card_number = chModel.getCard(charge);
                     chModel.setCardTaken(card_number);
-                    //-------------- Send mail ------------------
                     String message = "Thanks for Charging from YourCart ^_^ <br/>"
                     + "your cardNumber is : "+card_number + "<br/> with value of : "+charge +"$"
                     +"<br/> to chare your cart <a href='http://localhost:8084/yourCart/ConfirmScratchCard.jsp'> click here </a>";

@@ -10,10 +10,7 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author Mostafa
- */
+
 public class CategoryModel {
 
     Category bean = new Category();

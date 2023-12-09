@@ -1,14 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package org.issam.ecommerceweb.controller.admin;
 
-/**
- * display all users
- * @author sara metwalli
- */
+
 
 import org.issam.ecommerceweb.beans.User;
 import org.issam.ecommerceweb.model.UserDbModel;

@@ -13,10 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
 
-/**
- * get all slide 
- * @author OsamaPC
- */
+
 @WebServlet("/admin/SlidersShow")
 public class SlidersShow extends HttpServlet {
 

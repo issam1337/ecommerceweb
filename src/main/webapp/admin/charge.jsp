@@ -1,8 +1,4 @@
-<%-- 
-    Document   : charge
-    Created on : Mar 9, 2017, 12:17:42 AM
-    Author     : Nesmaa
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
@@ -11,7 +7,7 @@
 <%@ page import="org.issam.ecommerceweb.controller.admin.AdminProductServlet" %>
 <%@include file="header.jsp" %>
 
-<%-- include slidebar file --%> 
+
 <%@include file="slidebar.jsp" %>
 <jsp:include page="ChargeServlet"/>
 
@@ -81,9 +77,7 @@
 </div>
 </div>
 </div>
-</section> <!--/#cart_items-->
-
-<%-- include footer file --%> 
+</section>
 <%@include file="footer.jsp" %>
-<%-- include notify file --%> 
+
 <%@include file="notify.jsp" %>

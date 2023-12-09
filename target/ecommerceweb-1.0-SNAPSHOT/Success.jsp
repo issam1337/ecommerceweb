@@ -1,13 +1,9 @@
-<%-- 
-    Document   : loginSuccess
-    Created on : Mar 2, 2017, 11:19:50 AM
-    Author     : sara metwalli
---%>
+
 
 
 <%@include file="header.jsp" %>
 
-<section id="form"><!--form-->
+<section id="form">
     <div class="container">
         <div class="row">
 

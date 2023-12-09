@@ -1,17 +1,11 @@
-<%-- 
-    Document   : product-details
-    Created on : Feb 28, 2017, 11:05:58 PM
-    Author     : MotYim
---%>
-<%-- include header file --%> 
+
 <%@include file="header.jsp" %>
 
 
-<%-- include slidebar file --%> 
 <%@include file="slidebar.jsp" %>
 
 <div class="col-sm-9 padding-right">
-    <div class="product-details"><!--product-details-->
+    <div class="product-details">
         <div class="col-sm-5">
             <div class="view-product">
                 <img src="${product.photo}" alt="" />
@@ -21,7 +15,7 @@
 
         </div>
         <div class="col-sm-7">
-            <div class="product-information"><!--/product-information-->
+            <div class="product-information">
                 <h2>${product.name}</h2>
                 <p>Product ID: ${product.productId}</p>
                 <span>
@@ -37,13 +31,13 @@
                 <p><b>Description</b> ${product.discriptin}</p>
                 <span>Add on : ${product.date} | Model : ${product.model} </span>
 
-            </div><!--/product-information-->
+            </div>
         </div>
-    </div><!--/product-details-->
+    </div>
 
 
 
-    <div class="recommended_items"><!--recommended_items-->
+    <div class="recommended_items">
         <h2 class="title text-center">recommended items</h2>
 
         <div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
@@ -86,12 +80,12 @@
                 <i class="fa fa-angle-right"></i>
             </a>			
         </div>
-    </div><!--/recommended_items-->
+    </div>
 
 </div>
 </div>
 </div>
 </section>
 
-<%-- include footer file --%> 
+
 <%@include file="footer.jsp" %>

@@ -9,10 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * delete slide
- * @author OsamaPC 
- */
+
 @WebServlet("/admin/DeleteSlider")
 public class DeleteSlider extends HttpServlet {
 
@@ -27,18 +24,12 @@ public class DeleteSlider extends HttpServlet {
 
         boolean deleteSlider = sliderOp.deleteSlider(id);
         if (deleteSlider) {
-            //redirect to Success
-             //set alert message
             request.getSession().setAttribute("AlertMessage", "Slide Deleted Successfully");
-            //set alert type
             request.getSession().setAttribute("AlertType", "success");
             response.sendRedirect("SlidersShow");
             
         } else {
-            //can't add product
-            //set alert message
             request.getSession().setAttribute("AlertMessage", "canot Delete slide ..An Error occure");
-            //set alert type
             request.getSession().setAttribute("AlertType", "danger");
             response.sendRedirect("SlidersShow");
            

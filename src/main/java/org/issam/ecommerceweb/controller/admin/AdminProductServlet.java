@@ -1,9 +1,6 @@
 package org.issam.ecommerceweb.controller.admin;
 
-/**
- * diplay products
- * @author sara metwalli
- */
+
 
 import org.issam.ecommerceweb.beans.Product;
 import org.issam.ecommerceweb.model.ProductModel;

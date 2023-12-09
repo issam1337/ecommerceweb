@@ -1,9 +1,5 @@
 package org.issam.ecommerceweb.controller.user;
 
-/**
- * display leates product in index
- * @author sara metwalli
- */
 
 import org.issam.ecommerceweb.beans.Product;
 import org.issam.ecommerceweb.model.ProductModel;

@@ -1,8 +1,3 @@
-<%-- 
-    Document   : header
-    Created on : Feb 28, 2017, 10:13:51 PM
-    Author     : MotYim
---%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -59,9 +54,9 @@
                         </div>
                     </div>
                 </div>
-            </div><!--/header_top-->
+            </div>
 
-            <div class="header-middle"><!--header-middle-->
+            <div class="header-middle">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-4">
@@ -97,7 +92,7 @@
                         </div>
                     </div>
                 </div>
-            </div><!--/header-middle-->
+            </div>
 
             <div class="header-bottom"><!--header-bottom-->
                 <div class="container">

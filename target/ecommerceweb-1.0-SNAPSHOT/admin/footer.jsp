@@ -1,11 +1,6 @@
-<%-- 
-    Document   : footer
-    Created on : Feb 28, 2017, 10:24:00 PM
-    Author     : MotYim
---%>
 
 
-<footer id="footer"><!--Footer-->
+<footer id="footer">
     <div class="footer-top">
         <div class="container">
             <div class="row">
@@ -32,7 +27,7 @@
 
 
 
-</footer><!--/Footer-->
+</footer>
 
 
 

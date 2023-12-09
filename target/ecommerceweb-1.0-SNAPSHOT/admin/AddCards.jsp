@@ -1,8 +1,4 @@
-<%-- 
-    Document   : AddCards
-    Created on : Mar 9, 2017, 1:07:53 AM
-    Author     : Nesmaa
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
@@ -10,7 +6,7 @@
 <%@ page import="org.issam.ecommerceweb.controller.admin.AdminProductServlet" %>
 <%@include file="header.jsp" %>
 
-<%-- include slidebar file --%> 
+
 <%@include file="slidebar.jsp" %>
 
 <div class="col-sm-6 padding-right">
@@ -49,9 +45,9 @@
     </div>
 </div>
 </div>
-</section> <!--/#cart_items-->
+</section>
 
-<%-- include footer file --%> 
+
 <%@include file="footer.jsp" %>
 
 

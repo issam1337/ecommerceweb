@@ -11,10 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 
-/**
- * get number of product in user cart
- * @author OsamaPC
- */
+
 @WebServlet("/getCartCount")
 public class NumberOFCartsForUser extends HttpServlet {
 

@@ -11,10 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
 
-/**
- * search by name or price 
- * @author Osama & Nesmaa
- */
+
 public class SearchForProduct extends HttpServlet {
 
     ArrayList<Product> product = new ArrayList<>();
@@ -58,14 +55,10 @@ public class SearchForProduct extends HttpServlet {
 
     }
 
-    /**
-     * Returns a short description of the servlet.
-     *
-     * @return a String containing servlet description
-     */
+
     @Override
     public String getServletInfo() {
         return "Short description";
-    }// </editor-fold>
+    }
 
 }

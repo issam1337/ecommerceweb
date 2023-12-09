@@ -1,8 +1,4 @@
-<%-- 
-    Document   : ConfirmScratchCard
-    Created on : Mar 9, 2017, 7:55:31 AM
-    Author     : sara metwalli
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

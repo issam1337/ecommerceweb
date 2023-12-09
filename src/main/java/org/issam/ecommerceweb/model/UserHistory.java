@@ -11,14 +11,10 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author OsamaPC
- */
+
 public class UserHistory extends DbConnection{
 
     ResultSet rs = null;
-   // DbConnection db = new DbConnection();
     Connection con;
   
 

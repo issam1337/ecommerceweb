@@ -15,11 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 import java.io.IOException;
 
-/**
- * to add slider
- *
- * @author OsamaPC
- */
+
 @WebServlet("/admin/AddSlider")
 @MultipartConfig
 public class AddSlider extends HttpServlet {
@@ -52,8 +48,6 @@ public class AddSlider extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         sliderOp = new SliderOperation();
-//        String name = request.getParameter("ProductName");
-//        String price = request.getParameter("ProductPrice");
         String tittle = request.getParameter("tittle");
         String subtittle = request.getParameter("subTittle");
         String desc = request.getParameter("ProductDescription");
@@ -65,7 +59,7 @@ public class AddSlider extends HttpServlet {
         slider.setProductId(productIdForSlider);
 
         Part filePart = request.getPart("image");
-        if (filePart.getSize() != 0) {      //if photo uploaded
+        if (filePart.getSize() != 0) {
             String path = request.getServletContext().getRealPath("");
 
             try {
@@ -74,9 +68,9 @@ public class AddSlider extends HttpServlet {
             } catch (Exception ex) {
                 ex.printStackTrace();
 
-                //set alert message
+
                 request.getSession().setAttribute("AlertMessage", "please choose image only");
-                //set alert type
+
                 request.getSession().setAttribute("AlertType", "danger");
                 response.sendRedirect("SlidersShow");
                 return;
@@ -89,15 +83,15 @@ public class AddSlider extends HttpServlet {
         System.out.println(slider);
         boolean addSlider = sliderOp.addSlider(slider);
         if (addSlider) {
-            //set alert message
+
             request.getSession().setAttribute("AlertMessage", "Slide Added Successfully");
-            //set alert type
+
             request.getSession().setAttribute("AlertType", "success");
             response.sendRedirect("SlidersShow");
         } else {
-            //set alert message
+
             request.getSession().setAttribute("AlertMessage", "canot add slide ..An Error occure");
-            //set alert type
+
             request.getSession().setAttribute("AlertType", "danger");
             response.sendRedirect("SlidersShow");
 

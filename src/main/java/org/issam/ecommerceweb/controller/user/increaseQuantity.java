@@ -10,10 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- *
- * @author MotYim
- */
+
 @WebServlet(name = "increaseQuantity", urlPatterns = {"/increaseQuantity"})
 public class increaseQuantity extends HttpServlet {
 
@@ -24,7 +21,6 @@ public class increaseQuantity extends HttpServlet {
         int id = Integer.parseInt(request.getParameter("id"));
 
         boolean addCart = cartModel.increaseQuantity(id);
-        //get login user id
         User user = (User) request.getSession().getAttribute("LoginUser");
         response.getWriter().print(cartModel.getNubmberOfCartsForUser(user.getUserId()));
 

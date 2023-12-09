@@ -424,8 +424,6 @@
 		return value;
 		}
 	};
-//var min = $('#rbSlider').data('slider').options.value[0];
-//var max = $('#rbSlider').data('slider').options.value[1];
 
 	$.fn.slider.Constructor = Slider;
 

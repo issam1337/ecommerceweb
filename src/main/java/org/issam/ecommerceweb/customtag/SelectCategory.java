@@ -9,10 +9,7 @@ import javax.servlet.jsp.JspWriter;
 import javax.servlet.jsp.tagext.SimpleTagSupport;
 import java.util.ArrayList;
 
-/**
- *
- * @author MotYim
- */
+
 public class SelectCategory extends SimpleTagSupport {
 
     private int selectID;
@@ -23,8 +20,7 @@ public class SelectCategory extends SimpleTagSupport {
         
         try {
             out.print("<select name='category'>");
-            String selected = ""; 
-            //get all category
+            String selected = "";
             ArrayList<Category> categoriess = new CategoryModel().AllCategoriess();
             for (Category categories : categoriess) {
                 if(selectID == categories.getId())

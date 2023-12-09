@@ -1,13 +1,8 @@
-<%-- 
-    Document   : category
-    Created on : Mar 5, 2017, 3:27:34 PM
-    Author     : Nesmaa
---%>
+
 
 <%@ page import="org.issam.ecommerceweb.controller.admin.AdminCategoryServlet" %>
 <%@include file="header.jsp" %>
 
-<%-- include slidebar file --%> 
 <%@include file="slidebar.jsp" %>
 
 <div class="col-sm-9 padding-right">
@@ -53,9 +48,9 @@
 </div>
 </div>
 </div>
-</section> <!--/#cart_items-->
+</section>
 
-<%-- include footer file --%> 
+
 <%@include file="footer.jsp" %>
-<%-- include notify file --%> 
+
 <%@include file="notify.jsp" %>

@@ -12,16 +12,13 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.ArrayList;
 
-/**
- * make payment transaction proccess
- * @author MotYim
- */
+
 public class Payment extends DbConnection{
 
     public Payment() {
         
         try {
-            openConnection(); //open conncetion on DB
+            openConnection();
             
             //disable auto commit
             con.setAutoCommit(false);
@@ -36,10 +33,10 @@ public class Payment extends DbConnection{
         
         try {
 
-            //update user balance
+
             new UserDbModel().updateUserBalance(user);
             
-            //update amount of product on stock & insert into history 
+
             ProductModel productModel = new ProductModel();
             for (CartProduct itemSold : sold) {
 
@@ -48,7 +45,7 @@ public class Payment extends DbConnection{
                 product.setQuantity(itemSold.getQuantity_product() - itemSold.getQuantity());
                 productModel.updateProductQauntity(product);
                 
-                //save proccess in history 
+
                 History history = new History();
                 history.setData(LocalDateTime.of(LocalDate.now(), LocalTime.now())+"");
                 history.setProductId(itemSold.getProductId());
@@ -58,18 +55,18 @@ public class Payment extends DbConnection{
                 new UserHistory().addUserHistory(history);
             }
 
-            //empty user cart 
+
             new CartModel().deleteUserCart(user.getUserId());
          
-            //commit 
+
             con.commit();
-            //return defualt value of Database
+
 
             return true ;
         } catch (SQLException ex) {
             System.out.println("----Error in Transaction ----");
             try {
-                //rollback
+
                 con.rollback();
                 con.setAutoCommit(true);
             } catch (SQLException ex1) {

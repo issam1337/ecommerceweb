@@ -1,8 +1,3 @@
-<%-- 
-    Document   : footer
-    Created on : Feb 28, 2017, 10:24:00 PM
-    Author     : MotYim
---%>
 
 
 <footer id="footer"><!--Footer-->
@@ -32,7 +27,7 @@
 
 
 
-</footer><!--/Footer-->
+</footer>
 
 
 

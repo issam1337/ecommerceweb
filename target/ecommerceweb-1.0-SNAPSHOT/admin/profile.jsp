@@ -1,17 +1,12 @@
-<%-- 
-    Document   : profile-admin
-    Created on : Feb 28, 2017, 11:32:02 PM
-    Author     : MotYim
---%>
 
-<%-- include header file --%> 
+
 <%@include file="header.jsp" %>
 
-<%-- include slidebar file --%> 
+
 <%@include file="slidebar.jsp" %>
 
 
-<!--handle photo --> 
+
 <c:choose>
     <c:when test="${empty userInfo.photo}">
         <c:set var="photo" value="../upload/profile.jpg"/>
@@ -34,7 +29,7 @@
         <div class="col-sm-8">
            
             
-            <div class="product-information"><!--/product-information-->
+            <div class="product-information">
                 <form action="AdminProfile" method="post" id="editProfileForm" enctype="multipart/form-data" onsubmit="return validateSignup();">	
                     <h2>${userInfo.userName}</h2>
                     <p>Account Setting</p>
@@ -62,7 +57,7 @@
                     <button type="submit" class="btn btn-default" id="editSubmitBtn">Update</button>
                 </form>
             </div>
-        </div><!--/product-details-->
+        </div>
 
 
 
@@ -74,5 +69,5 @@
 </section>
 
 
-<%-- include footer file --%> 
+
 <%@include file="footer.jsp" %>

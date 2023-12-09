@@ -1,9 +1,6 @@
 package org.issam.ecommerceweb.controller.user;
 
-/**
- * get object in cart db of user to display in checkout page
- * @author sara metwalli
- */
+
 
 import org.issam.ecommerceweb.beans.CartProduct;
 import org.issam.ecommerceweb.beans.User;

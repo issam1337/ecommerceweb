@@ -1,11 +1,4 @@
-<%-- 
-    Document   : profile
-    Created on : Feb 28, 2017, 11:16:26 PM
-    Author     : MotYim
---%>
 
-
-<%-- include header file --%> 
 <%@include file="header.jsp" %>
 <section>
     <div class="container">
@@ -22,7 +15,7 @@
             </div>
 
             <div class="col-sm-9 padding-right">
-                <div class="product-details"><!--product-details-->
+                <div class="product-details">
                     <div class="col-sm-4">
                         <div class="view-product">
                             <img src="${LoginUser.photo}" id="imageView" alt="" />
@@ -57,9 +50,9 @@
                                 <input type="file" name="image" id="image" accept="image/*" /><br/>
                                 <button type="submit" class="btn btn-default" id="editSubmitBtn">Update</button>
                             </form>
-                        </div><!--/product-information-->
+                        </div>
                     </div>
-                </div><!--/product-details-->
+                </div>
 
 
 

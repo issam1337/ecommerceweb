@@ -1,9 +1,6 @@
 package org.issam.ecommerceweb.controller.user;
 
-/**
- * handle display product and category 
- * @author sara metwalli Edit by MotYim
- */
+
 
 import org.issam.ecommerceweb.beans.Product;
 import org.issam.ecommerceweb.model.ProductModel;
@@ -26,8 +23,6 @@ public class Shop extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         ProductModel productModel = new ProductModel();
-
-        //-------------- handle paging ------------------
         int pageid = 1;
         int totalPerPage = 9;
         int start;
@@ -36,7 +31,7 @@ public class Shop extends HttpServlet {
             pageid = Integer.parseInt(request.getParameter("page"));
         }
 
-        //end & start for paging
+
         start = (pageid - 1 )*totalPerPage;
         
 

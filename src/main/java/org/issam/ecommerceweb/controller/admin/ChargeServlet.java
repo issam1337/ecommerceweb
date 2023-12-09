@@ -10,10 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-/**
- *
- * @author Nesmaa
- */
+
 @WebServlet(name = "ChargeServlet", urlPatterns = {"/admin/ChargeServlet"})
 public class ChargeServlet extends HttpServlet {
 

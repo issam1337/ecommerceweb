@@ -9,10 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * delete product
- * @author OsamaPC 
- */
+
 @WebServlet(name = "DeleteProduct", urlPatterns = {"/admin/DeleteProduct"})
 public class DeleteProduct extends HttpServlet {
 
@@ -23,18 +20,12 @@ public class DeleteProduct extends HttpServlet {
         int id = Integer.parseInt(request.getParameter("id"));
         String path = request.getServletContext().getRealPath("");
         if (new ProductModel().deleteProduct(id,path)) {
-            //redirect to Success
-             //set alert message
             request.getSession().setAttribute("AlertMessage", "Product Deleted Successfully");
-            //set alert type
             request.getSession().setAttribute("AlertType", "success");
             response.sendRedirect("AdminProductServlet");
             
         } else {
-            //can't add product
-            //set alert message
             request.getSession().setAttribute("AlertMessage", "canot Delete product ..An Error occure");
-            //set alert type
             request.getSession().setAttribute("AlertType", "danger");
             response.sendRedirect("AdminProductServlet");
          

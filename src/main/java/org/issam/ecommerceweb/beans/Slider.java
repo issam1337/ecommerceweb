@@ -1,9 +1,6 @@
 package org.issam.ecommerceweb.beans;
 
-/**
- *
- * @author Mostafa
- */
+
 public class Slider {
 
     private int id;

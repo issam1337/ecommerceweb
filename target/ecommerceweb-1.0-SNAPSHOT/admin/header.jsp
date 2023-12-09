@@ -1,8 +1,4 @@
-<%-- 
-    Document   : header
-    Created on : Feb 28, 2017, 10:13:51 PM
-    Author     : MotYim
---%>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -32,8 +28,8 @@
     </head><!--/head-->
 
     <body>
-        <header id="header"><!--header-->
-            <div class="header_top"><!--header_top-->
+        <header id="header">
+            <div class="header_top">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6">
@@ -78,9 +74,9 @@
                         </div>
                     </div>
                 </div>
-            </div><!--/header-middle-->
+            </div>
 
-            <div class="header-bottom"><!--header-bottom-->
+            <div class="header-bottom">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
@@ -100,5 +96,5 @@
                         </div>
                     </div>
                 </div>
-            </div><!--/header-bottom-->
-        </header><!--/header-->
+            </div>
+        </header>

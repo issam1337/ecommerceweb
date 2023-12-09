@@ -1,9 +1,6 @@
 package org.issam.ecommerceweb.beans;
 
-/**
- *
- * @author sara metwalli
- */
+
 public class CartProduct {
      private int cartId;
     private int userId;
@@ -113,7 +110,7 @@ public class CartProduct {
     public void setCategory(int category) {
         this.category = category;
     }
-  //  CartProduct cartProduct=new CartProduct(cartId,rs.getInt("c.quantity"),rs.getString("p.name"),rs.getInt("p.price"),rs.getString("p.photo"),rs.getString("p.discriptin"),rs.getInt(",p.productId"));
+
 
     public CartProduct(int cartId, int quantity, String name, double price, String photo, String discriptin, int productId) {
         this.cartId = cartId;

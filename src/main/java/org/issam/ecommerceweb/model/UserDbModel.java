@@ -12,10 +12,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 
-/**
- *
- * @author Mostafa
- */
+
 public class UserDbModel{
 
     User bean = new User();
@@ -70,9 +67,7 @@ public class UserDbModel{
                 pst1.executeUpdate();
                 pst1.close();
                 b = true;
-                ////////////////////////////////////////
 
-                //con.close();
             } catch (SQLException e) {
                 e.printStackTrace();
                 return b ;
@@ -163,8 +158,6 @@ public class UserDbModel{
         con = db.openConnection();
         ArrayList<User> allUser = new ArrayList();
         try {
-            //DriverManager.registerDriver(new OracleDriver());
-            //Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "hr", "hr");
             PreparedStatement pst = con.prepareStatement("SELECT * from users ");
             ResultSet rs = pst.executeQuery();
             while (rs.next()) {

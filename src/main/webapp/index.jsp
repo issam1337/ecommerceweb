@@ -1,23 +1,17 @@
-<%--
-    Document   : index
-    Created on : Feb 28, 2017, 10:25:09 PM
-    Author     : MotYim
---%>
+
 <%@ page import="org.issam.ecommerceweb.controller.user.IndexProductServlet" %>
-<%--<jsp:include page="/IndexProductServlet"/> --%>
-<%-- include header file --%>
+
 <%@include file="header.jsp" %>
 
 
-<%-- include slider file --%>
 <%@include file="slider.jsp" %>
 
 
-<%-- include slidebar file --%>
+
 <%@include file="slidebar.jsp" %>
 <jsp:include page="/IndexProductServlet"/>
 <div class="col-sm-9 padding-right">
-    <div class="features_items"><!--features_items-->
+    <div class="features_items">
         <h2 class="title text-center">New Items</h2>
 
         <c:if test="${!empty requestScope.limitedProducts}">
@@ -52,12 +46,12 @@
             </c:forEach>
         </c:if>
 
-    </div><!--features_items-->
+    </div>
 </div>
 </div>
 </div>
 </section>
 
 
-<%-- include footer file --%>
+
 <%@include file="footer.jsp" %>

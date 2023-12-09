@@ -9,10 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-/**
- *
- * @author OsamaPC
- */
+
 public class CartModel extends DbConnection {
 
     ResultSet rs = null;
@@ -62,7 +59,7 @@ public class CartModel extends DbConnection {
             PreparedStatement pst = null;
             System.out.println("my con" + con);
             pst = con.prepareStatement("insert into cart (user_id,product_id,quantity)Values (?,?,?)");
-           // pst.setInt(1, cart.getCartId());
+
             pst.setInt(1, cart.getUserId());
             pst.setInt(2, cart.getProductId());
             pst.setInt(3, cart.getQuantity());
@@ -100,7 +97,6 @@ public class CartModel extends DbConnection {
         con = openConnection();
         PreparedStatement pst = null;
         try {
-            //System.out.println("my con" + con);
             pst = con.prepareStatement("delete From cart where user_id=?");
             pst.setInt(1, userID);
             int executeUpdate = pst.executeUpdate();
@@ -263,7 +259,6 @@ public class CartModel extends DbConnection {
                 con = openConnection();
                 PreparedStatement pst = null;
                 try {
-                    //System.out.println("my con" + con);
                     pst = con.prepareStatement("update cart set quantity=? where id=? ");
                    pst.setInt(1,cart.getQuantity()+1);
                     pst.setInt(2, cartID);

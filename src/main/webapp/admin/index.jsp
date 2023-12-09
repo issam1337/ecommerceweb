@@ -1,15 +1,10 @@
-<%-- 
-    Document   : indexAdmin
-    Created on : Mar 5, 2017, 4:31:46 PM
-    Author     : sara metwalli
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="header.jsp" %>
-<%-- include slider file --%> 
 
 
-<%-- include slidebar file --%> 
+
 <%@include file="slidebar.jsp" %>
 
 <jsp:include page="AdminIndex"/>
@@ -129,5 +124,5 @@
 </section>
 
 
-<%-- include footer file --%> 
+
 <%@include file="footer.jsp" %>

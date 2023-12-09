@@ -8,10 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-/**
- *
- * @author Mostafa
- */
+
 public class SliderOperation extends DbConnection {
 
     Connection con;
@@ -25,7 +22,7 @@ public class SliderOperation extends DbConnection {
             PreparedStatement pst = null;
             System.out.println("my con" + con);
             pst = con.prepareStatement("insert into slides (image,title,subTitle,description,product_Id)Values (?,?,?,?,?)");
-            // pst.setInt(1, slider.getId());
+
             pst.setString(1, slider.getImage());
             pst.setString(2, slider.getTitle());
             pst.setString(3, slider.getSubTitle());
@@ -47,7 +44,7 @@ public class SliderOperation extends DbConnection {
         try {
             con = db.openConnection();
             PreparedStatement pst = null;
-            //System.out.println("my con" + con);
+
             pst = con.prepareStatement("delete From slides where id=?");
             pst.setInt(1, id);
             int executeUpdate = pst.executeUpdate();

@@ -9,10 +9,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Random;
 
-/**
- *
- * @author OsamaPC
- */
+
 public class AdvertisementModel extends DbConnection {
 
     Connection con;
@@ -47,7 +44,6 @@ public class AdvertisementModel extends DbConnection {
         try {
             con = openConnection();
             PreparedStatement pst = null;
-            //System.out.println("my con" + con);
             pst = con.prepareStatement("delete From ads where id=?");
             pst.setInt(1, id);
             int executeUpdate = pst.executeUpdate();

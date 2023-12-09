@@ -1,9 +1,6 @@
 package org.issam.ecommerceweb.beans;
 
-/**
- *
- * @author OsamaPC
- */
+
 public class History {
     
     private int historyId;

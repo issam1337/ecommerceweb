@@ -1,9 +1,5 @@
 package org.issam.ecommerceweb.beans;
 
-/**
- *
- * @author OsamaPC
- */
 public class Advertisement {
     private int id;
     private String image;

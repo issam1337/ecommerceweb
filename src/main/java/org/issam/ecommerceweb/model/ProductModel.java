@@ -10,10 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author Nesmaa
- */
+
 public class ProductModel {
 
     ResultSet rs;
@@ -43,8 +40,7 @@ public class ProductModel {
 
             i = pst.executeUpdate();
 
-            // pst.close();
-            //  con.commit();
+
             db.closeConnection();
 
             if (i > 0) {
@@ -324,12 +320,7 @@ public class ProductModel {
          return getAllProductByPrice;
     }
     
-    /**
-     * make paging for product with no category
-     * @param start offset to start from
-     * @param limit limit per one 
-     * @return all product with in start and limit
-     */
+
     public ArrayList<Product> getAllProduct(int start , int limit) {
         ArrayList<Product> list = new ArrayList();
         try {
@@ -349,7 +340,7 @@ public class ProductModel {
 
             }
             
-            //get number of record in DB 
+
             rs = con.prepareStatement("SELECT count(*) FROM product").executeQuery();
             if(rs.next()){
                 this.noOfRecords = rs.getInt(1);
@@ -382,7 +373,7 @@ public class ProductModel {
                 list.add(p);
             }
             
-            //get number of record in DB 
+
             pst = con.prepareStatement("SELECT count(*) FROM product where category_id=?");
             pst.setInt(1, categoryId);
             rs = pst.executeQuery();
@@ -426,7 +417,7 @@ public class ProductModel {
         }
         return  highestprice;
 
-        //return null;
+
 
     }
 }

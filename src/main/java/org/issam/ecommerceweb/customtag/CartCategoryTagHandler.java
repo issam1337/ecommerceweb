@@ -13,10 +13,7 @@ import javax.servlet.jsp.JspWriter;
 import javax.servlet.jsp.tagext.SimpleTagSupport;
 import java.util.ArrayList;
 
-/**
- *
- * @author MotYim
- */
+
 public class CartCategoryTagHandler extends SimpleTagSupport {
 
 

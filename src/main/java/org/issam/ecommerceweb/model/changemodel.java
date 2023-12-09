@@ -7,10 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-/**
- *
- * @author Nesmaa
- */
+
 public class changemodel {
 
     ResultSet rs;
@@ -214,7 +211,6 @@ public class changemodel {
 
         try {
             con = db.openConnection();
-            //  System.out.println("--="+con.isClosed());
             pst = con.prepareStatement("select card_number from charge where  card_number=?  ");
 
             pst.setString(1, numbercheck);

@@ -12,10 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
 
-/**
- * display category
- * @author Nesmaa
- */
+
 @WebServlet(name = "AdminCategoryServlet", urlPatterns = {"/admin/AdminCategoryServlet"})
 public class AdminCategoryServlet extends HttpServlet {
       
@@ -27,8 +24,6 @@ public class AdminCategoryServlet extends HttpServlet {
         System.out.println("servlet");
         CategoryModel categorymodel = new CategoryModel();
         allCategory= categorymodel.AllCategoriess();
-        //System.out.println(allCategory.get(0).getName());
-        //System.out.println(allCategory.size());
         request.setAttribute("allCategorysAdmin", allCategory);
 
         String nextJSP = "/admin/category.jsp";

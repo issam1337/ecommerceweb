@@ -5,20 +5,10 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Date;
 
-/**
- * Make an operation on file & get info
- *
- * @author MotYim
- */
+
 public class FileUpload {
 
-    /**
-     * upload image to server
-     *
-     * @param file
-     * @param path
-     * @return path where file saved on server
-     */
+
     public static String uploadImage(Part file, String path) {
         try {
 
@@ -37,12 +27,7 @@ public class FileUpload {
         }
     }
 
-    /**
-     * get file name of part
-     *
-     * @param part
-     * @return file name
-     */
+
     private static String getFileName(final Part part) {
         for (String content : part.getHeader("content-disposition").split(";")) {
             if (content.trim().startsWith("filename")) {
@@ -54,13 +39,7 @@ public class FileUpload {
         return null;
     }
 
-    /**
-     * check if file is an image
-     *
-     * @param part
-     * @return true if file is image <br/>
-     * false if file not image
-     */
+
     private static boolean isImage(final Part part) {
         String type = part.getContentType();
         return type.contains("image");

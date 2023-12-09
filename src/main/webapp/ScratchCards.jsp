@@ -1,14 +1,10 @@
-<%-- 
-    Document   : ScratchCards
-    Created on : Mar 8, 2017, 10:53:08 PM
-    Author     : sara metwalli
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="header.jsp" %>
 <%@include file="slidebar.jsp" %>
 <div class="col-sm-9 padding-right">
-    <div class="features_items"><!--features_items-->
+    <div class="features_items">
         <h2 class="title text-center">Scratch Cards</h2>
 
         <div class="col-sm-4">

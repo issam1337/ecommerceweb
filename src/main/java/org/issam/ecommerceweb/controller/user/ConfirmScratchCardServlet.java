@@ -1,9 +1,6 @@
 package org.issam.ecommerceweb.controller.user;
 
-/**
- * check card number to get cash
- * @author sara metwalli
- */
+
 
 import org.issam.ecommerceweb.beans.User;
 import org.issam.ecommerceweb.model.UserDbModel;
@@ -36,7 +33,6 @@ public class ConfirmScratchCardServlet extends HttpServlet {
         System.out.println("cardStr"+CardStr);
         changemodel chModel = new changemodel();
         boolean exist = chModel.checkCardExistForUser(CardStr);
-       // boolean notused = chModel.checkCardValidation(CardStr);
         System.out.println("exx "+ exist );
         if (exist ) {
 

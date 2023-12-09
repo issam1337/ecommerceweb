@@ -1,20 +1,15 @@
-<%-- 
-    Document   : offers
-    Created on : Mar 5, 2017, 4:04:13 PM
-    Author     : OsamaPC
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page import="org.issam.ecommerceweb.controller.admin.AdminProductServlet" %>
 <%@include file="header.jsp" %>
 
-<%-- include slidebar file --%> 
+
 <%@include file="slidebar.jsp" %>
 
 <div class="col-sm-9 padding-right">
 
     <h2>Slidebar
-      <!--  <a class="btn btn-default" style="float: right;" href="addproduct.jsp">New Slidebar</a> -->
+
     </h2>
 
 
@@ -64,9 +59,8 @@
 </div>
 </div>
 </div>
-</section> <!--/#cart_items-->
+</section>
 
-<%-- include footer file --%> 
 <%@include file="footer.jsp" %>
-<%-- include notify file --%> 
+
 <%@include file="notify.jsp" %>
