@@ -31,11 +31,6 @@
                             </div>
                         </div>
 
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title"><a href="AdminHistoryServlet">History</a></h4>
-                            </div>
-                        </div>
                         
                          <div class="panel panel-default">
                             <div class="panel-heading">
@@ -48,13 +43,7 @@
                                 <h4 class="panel-title"><a href="charge.jsp">Scratch Cards</a></h4>
                             </div>
                         </div>
-                        
-                         <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title"><a href="ShowAdvertisement">Ads</a></h4>
-                            </div>
-                        </div>
-                        
+
                         
                     </div><!--/category-products-->
 

@@ -27,15 +27,5 @@
                         </div>
                     </div><!--/price-range-->
                     </form>
-
-                    <div class="shipping text-center"><!--shipping-->
-                        <c:if test="${not empty ads}">
-                            <a href="${ads.url}" target="_blank">
-                                <img class="ads" src="${ads.image}" alt="" />
-                            </a>
-                        </c:if>
-                        
-                    </div><!--/shipping-->
-
                 </div>
             </div>

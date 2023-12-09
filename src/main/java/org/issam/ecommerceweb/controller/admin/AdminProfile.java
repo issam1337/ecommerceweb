@@ -105,7 +105,7 @@ System.out.println("Test3-----------------------------");
         } else {
             //can't update user
             //set alert message
-            request.getSession().setAttribute("AlertMessage", "Canot update user ..an error Occuer");
+            request.getSession().setAttribute("AlertMessage", "Canot update user ..email or credit card used before");
             //set alert type
             request.getSession().setAttribute("AlertType", "danger");
             response.sendRedirect("AdminUserServlet");

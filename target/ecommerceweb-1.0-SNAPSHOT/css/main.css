@@ -115,23 +115,23 @@ a#scrollUp i{
 
 
 .fa-facebook:hover {
-    background: #0083C9;
+    background: #A5E3B9;
 }
 
 .fa-twitter:hover  {
-    background:#5BBCEC;
+    background:#A5E3B9;
 }
 
 .fa-linkedin:hover  {
-    background:#FF4518;
+    background:#A5E3B9;
 }
 
 .fa-dribbble:hover  {
-    background:#90C9DC;
+    background:#A5E3B9;
 }
 
 .fa-google-plus:hover  {
-    background:#CE3C2D;
+    background:#A5E3B9;
 }
 
 .header-middle .container .row {
@@ -247,7 +247,7 @@ a#scrollUp i{
 
 .mainmenu ul li a:hover, .mainmenu ul li a.active,  .shop-menu ul li a.active{
     background:none;
-    color:#fdb45e;
+    color:#A5E3B9;
 }
 
 .search_box input {
@@ -300,7 +300,7 @@ ul.sub-menu {
 }
 
 .dropdown ul.sub-menu li .active{
-    color: #FDB45E;
+    color: #A5E3B9;
     padding-left: 0;
 }
 
@@ -318,7 +318,7 @@ ul.sub-menu {
 }
 
 .navbar-nav li ul.sub-menu li a:hover{
-    color: #FDB45E;
+    color: #A5E3B9;
 }
 
 .fa-angle-down{
@@ -2265,7 +2265,7 @@ h2.title {
 
 .media-list .btn-primary, 
 .commnets .btn-primary {
-    background:#FC9A11;
+    background:#A5E3B9;
     border: 0 none;
     border-radius: 0;
     color: #FFFFFF;
@@ -2463,7 +2463,7 @@ h2.title {
 #contact-page .form-control:focus, 
 #contact-page .form-control:hover {
     box-shadow: inherit;
-    border-color: #FDB45E;
+    border-color: #A5E3B9;
 }
 
 #contact-page .contact-info {

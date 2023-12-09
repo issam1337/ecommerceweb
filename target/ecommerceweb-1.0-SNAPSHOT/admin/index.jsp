@@ -79,26 +79,7 @@
                 </div>
             </div> 
 
-            <div class="col-sm-4">
-                <div class="product-image-wrapper">
-                    <div class="single-products">
-                        <div class="productinfo text-center">
-                            <i class="fa fa-file-text fa-5x" aria-hidden="true" ></i>
-                            <h2>History</h2>
 
-                            <a href="AdminHistoryServlet" class="btn btn-default my_btn"><i class=" fa fa-file-text "></i> History</a>
-                        </div>
-                        <div class="product-overlay">
-                            <div class="overlay-content">
-                                <h2>Here you can view History </h2>
-                                <a href="AdminHistoryServlet" class="btn btn-default my_btn"><i class="fa fa-file-text" ></i> History</a>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div> 
             
             <div class="col-sm-4">
                 <div class="product-image-wrapper">
@@ -138,27 +119,6 @@
                             </div>
                         </div>
 
-                    </div>
-                </div>
-            </div>
- 
-            <div class="col-sm-4">
-                <div class="product-image-wrapper">
-                    <div class="single-products">
-                        <div class="productinfo text-center">
-                            <i class="fa fa-bullhorn fa-5x" aria-hidden="true" ></i>
-                            <h2>Ads</h2>
-
-                            <a href="ShowAdvertisement" class="btn btn-default my_btn"><i class="fa fa-bullhorn "></i> Ads</a>
-                        </div>
-                        <div class="product-overlay">
-                            <div class="overlay-content">
-                                <h2>Here you can Add Ads </h2>
-                                <a href="ShowAdvertisement" class="btn btn-default my_btn"><i class="fa fa-bullhorn" ></i> Ads</a>
-
-                            </div>
-                        </div>
-                    </div>
                     </div>
                 </div>
             </div>

@@ -89,7 +89,7 @@ public class MailModel {
             getMailSession = Session.getDefaultInstance(mailServerProperties, null);
             generateMailMessage = new MimeMessage(getMailSession);
             generateMailMessage.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
-            generateMailMessage.setSubject("Your Cart | " + subject);
+            generateMailMessage.setSubject("Company Name | " + subject);
             emailBody += "<br><br>Your Chat Team <br> <a href='#'>visit us</a>";
             generateMailMessage.setContent(emailBody, "text/html");
 
