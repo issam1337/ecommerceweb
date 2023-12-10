@@ -95,7 +95,6 @@ public class ProductModel {
             Product product = getProduct(id);
             boolean deleteFile = FileUpload.deleteFile(product.getPhoto(), path);
             System.out.println(product.getPhoto());
-            System.out.println("osama" + deleteFile);
             if (deleteFile) {
                 con = db.openConnection();
                 pst = con.prepareStatement("delete from product where id=?");

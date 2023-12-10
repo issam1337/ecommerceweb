@@ -44,7 +44,6 @@ public class changemodel {
         int i = 0;
 
         con = db.openConnection();
-        System.out.println(con);
 
         try {
 

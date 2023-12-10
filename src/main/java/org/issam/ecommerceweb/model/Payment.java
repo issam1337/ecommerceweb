@@ -2,14 +2,10 @@
 package org.issam.ecommerceweb.model;
 
 import org.issam.ecommerceweb.beans.CartProduct;
-import org.issam.ecommerceweb.beans.History;
 import org.issam.ecommerceweb.beans.Product;
 import org.issam.ecommerceweb.beans.User;
 
 import java.sql.SQLException;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
 import java.util.ArrayList;
 
 
@@ -44,15 +40,6 @@ public class Payment extends DbConnection{
                 product.setProductId(itemSold.getProductId());
                 product.setQuantity(itemSold.getQuantity_product() - itemSold.getQuantity());
                 productModel.updateProductQauntity(product);
-                
-
-                History history = new History();
-                history.setData(LocalDateTime.of(LocalDate.now(), LocalTime.now())+"");
-                history.setProductId(itemSold.getProductId());
-                history.setUserId(user.getUserId());
-                history.setQuantity(itemSold.getQuantity());
-
-                new UserHistory().addUserHistory(history);
             }
 
 

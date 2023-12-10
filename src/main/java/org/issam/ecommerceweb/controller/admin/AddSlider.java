@@ -29,7 +29,6 @@ public class AddSlider extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        System.out.println("addslider");
         productIdForSlider = Integer.parseInt(request.getParameter("id"));
         pModel = new ProductModel();
         productForSlider = pModel.getProduct(productIdForSlider);

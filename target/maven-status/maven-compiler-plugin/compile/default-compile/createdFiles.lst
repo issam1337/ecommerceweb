@@ -6,7 +6,6 @@ org\issam\ecommerceweb\controller\user\CartHandlerServlet.class
 org\issam\ecommerceweb\filter\CheckLogout.class
 org\issam\ecommerceweb\beans\Slider.class
 org\issam\ecommerceweb\controller\user\Pay.class
-org\issam\ecommerceweb\model\UserHistory.class
 org\issam\ecommerceweb\model\changemodel.class
 org\issam\ecommerceweb\controller\user\Slider.class
 org\issam\ecommerceweb\customtag\SelectCategory.class
@@ -21,9 +20,7 @@ org\issam\ecommerceweb\controller\admin\SlidersShow.class
 org\issam\ecommerceweb\controller\user\increaseQuantity.class
 org\issam\ecommerceweb\controller\user\Signin.class
 org\issam\ecommerceweb\model\DbConnection.class
-org\issam\ecommerceweb\utilize\MailModel.class
 org\issam\ecommerceweb\controller\user\ReduceQuantity.class
-org\issam\ecommerceweb\beans\Advertisement.class
 org\issam\ecommerceweb\controller\user\ScratchCardServlet.class
 org\issam\ecommerceweb\HelloServlet.class
 org\issam\ecommerceweb\controller\user\ConfirmScratchCardServlet.class
@@ -49,7 +46,6 @@ org\issam\ecommerceweb\controller\admin\AdminCategoryServlet.class
 org\issam\ecommerceweb\controller\admin\DeleteProduct.class
 org\issam\ecommerceweb\controller\admin\AdminProductServlet.class
 org\issam\ecommerceweb\model\CartModel.class
-org\issam\ecommerceweb\beans\History.class
 org\issam\ecommerceweb\controller\admin\AdminUserServlet.class
 org\issam\ecommerceweb\model\SliderOperation.class
 org\issam\ecommerceweb\controller\admin\AdminIndex.class

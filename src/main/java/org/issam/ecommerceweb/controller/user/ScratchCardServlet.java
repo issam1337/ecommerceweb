@@ -2,9 +2,7 @@ package org.issam.ecommerceweb.controller.user;
 
 
 
-import org.issam.ecommerceweb.beans.User;
 import org.issam.ecommerceweb.model.changemodel;
-import org.issam.ecommerceweb.utilize.MailModel;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

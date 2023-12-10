@@ -4,7 +4,6 @@ import org.issam.ecommerceweb.beans.CartProduct;
 import org.issam.ecommerceweb.beans.User;
 import org.issam.ecommerceweb.model.CartModel;
 import org.issam.ecommerceweb.model.Payment;
-import org.issam.ecommerceweb.utilize.MailModel;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -61,9 +60,6 @@ public class Pay extends HttpServlet {
         if(new Payment().startPayment(user, productCart)){
             message = "Thanks for buying ^_^ <br/>"
                     + "your product will delivered in two days ..";
-            
-            new MailModel(user.getEmail(), "Successfull Payment", message).sendMail();
-            
             request.getSession().setAttribute("message",message);
             response.sendRedirect("Success.jsp");
         }else{
