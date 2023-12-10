@@ -47,7 +47,7 @@ public class FileUpload {
 
     public static boolean deleteFile(String photo, String path) {
 
-        if (photo.equalsIgnoreCase("upload/yourCart.png") || photo.equalsIgnoreCase("upload/profile.jpg")) {
+        if (photo.equalsIgnoreCase("upload/add.png") || photo.equalsIgnoreCase("upload/profile.jpg")) {
             return true;
         }
         File file = new File(path + photo);

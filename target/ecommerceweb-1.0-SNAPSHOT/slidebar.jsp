@@ -1,6 +1,6 @@
 
 <section>
-    <jsp:include page="/Ads"/>
+
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
@@ -11,17 +11,20 @@
                         <myCate:CartCategory/>
                     </div>
                     <form action="SearchForProduct" method="get">
-                    <div class="price-range">
-                        <h2>Price Range</h2>
-                        <div class="well text-center">
-                            <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="${maxPrice}" data-slider-step="5" data-slider-value="[0,${maxPrice}]" id="sl2" ><br />
-                            <b class="pull-left">$ 0</b> <b class="pull-right">$${maxPrice}</b>
-                            <br>
-                             <input type="hidden" id="downValue" name="down" value="0"/>
-                             <input type="hidden" id="upValue" name="up"value="${maxPrice}"/>
-                             <input type="submit"  class="btn btn-default">
+                        <div class="price-range">
+                            <h2>Price Range</h2>
+                            <div class="well text-center">
+                                <div class="form-group">
+                                    <label for="minPrice">Min Price:</label>
+                                    <input type="number" class="form-control" id="minPrice" name="down" placeholder="Enter min price" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="maxPrice">Max Price:</label>
+                                    <input type="number" class="form-control" id="maxPrice" name="up" placeholder="Enter max price" required />
+                                </div>
+                                <input type="submit" class="btn btn-default">
+                            </div>
                         </div>
-                    </div>
                     </form>
                 </div>
             </div>

@@ -56,7 +56,7 @@ $(document).ready(function () {
         if(link.includes("Shop")){
             $("#shopBtn").addClass("active");
             $("#homeBtn").removeClass("active");
-        }else if(link.includes("index.jsp") || link.endsWith("yourCart/")){
+        }else if(link.includes("index.jsp") || link.endsWith("ecommerceweb/")){
             $("#homeBtn").addClass("active");
             $("#shopBtn").removeClass("active");
         }else{

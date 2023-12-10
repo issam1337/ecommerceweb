@@ -101,7 +101,7 @@ public class changemodel {
 
         try {
             con = db.openConnection();
-            pst = con.prepareStatement("select card_number from charge where  card_number=? and used=0 ");
+            pst = con.prepareStatement("select card_number from charge where  card_number=? and used=false ");
 
             pst.setString(1, number);
             rs = pst.executeQuery();
@@ -166,7 +166,7 @@ public class changemodel {
     public boolean setCardUsed(String number) {
         try {
             con = db.openConnection();
-            pst = con.prepareStatement("update charge set used=1 where  card_number=?  ");
+            pst = con.prepareStatement("update charge set used=true where  card_number=?  ");
 
             pst.setString(1, number);
             int i = pst.executeUpdate();

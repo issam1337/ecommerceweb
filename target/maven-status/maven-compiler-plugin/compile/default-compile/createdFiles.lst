@@ -1,11 +1,9 @@
-org\issam\ecommerceweb\controller\admin\AdminHistoryServlet.class
 org\issam\ecommerceweb\controller\user\Shop.class
 org\issam\ecommerceweb\utilize\FileUpload.class
 org\issam\ecommerceweb\controller\user\DeleteCart.class
 org\issam\ecommerceweb\beans\CartProduct.class
 org\issam\ecommerceweb\controller\user\CartHandlerServlet.class
 org\issam\ecommerceweb\filter\CheckLogout.class
-org\issam\ecommerceweb\model\AdvertisementModel.class
 org\issam\ecommerceweb\beans\Slider.class
 org\issam\ecommerceweb\controller\user\Pay.class
 org\issam\ecommerceweb\model\UserHistory.class
@@ -25,9 +23,7 @@ org\issam\ecommerceweb\controller\user\Signin.class
 org\issam\ecommerceweb\model\DbConnection.class
 org\issam\ecommerceweb\utilize\MailModel.class
 org\issam\ecommerceweb\controller\user\ReduceQuantity.class
-org\issam\ecommerceweb\controller\user\Ads.class
 org\issam\ecommerceweb\beans\Advertisement.class
-org\issam\ecommerceweb\controller\admin\ShowAdvertisement.class
 org\issam\ecommerceweb\controller\user\ScratchCardServlet.class
 org\issam\ecommerceweb\HelloServlet.class
 org\issam\ecommerceweb\controller\user\ConfirmScratchCardServlet.class
@@ -43,14 +39,12 @@ org\issam\ecommerceweb\controller\admin\AdminProfile.class
 org\issam\ecommerceweb\controller\admin\AddProduct.class
 org\issam\ecommerceweb\beans\Category.class
 org\issam\ecommerceweb\controller\admin\SessionHandler.class
-org\issam\ecommerceweb\controller\admin\DeleteAdvertisement.class
 org\issam\ecommerceweb\controller\user\NumberOFCartsForUser.class
 org\issam\ecommerceweb\controller\user\Profile.class
 org\issam\ecommerceweb\model\UserDbModel.class
 org\issam\ecommerceweb\controller\admin\ChargeServlet.class
 org\issam\ecommerceweb\controller\user\Product.class
 org\issam\ecommerceweb\model\ProductModel.class
-org\issam\ecommerceweb\controller\admin\AddAdvertisement.class
 org\issam\ecommerceweb\controller\admin\AdminCategoryServlet.class
 org\issam\ecommerceweb\controller\admin\DeleteProduct.class
 org\issam\ecommerceweb\controller\admin\AdminProductServlet.class
@@ -60,7 +54,6 @@ org\issam\ecommerceweb\controller\admin\AdminUserServlet.class
 org\issam\ecommerceweb\model\SliderOperation.class
 org\issam\ecommerceweb\controller\admin\AdminIndex.class
 org\issam\ecommerceweb\model\Payment.class
-org\issam\ecommerceweb\controller\admin\GetAllHistory.class
 org\issam\ecommerceweb\controller\user\Signup.class
 org\issam\ecommerceweb\beans\Cart.class
 org\issam\ecommerceweb\controller\admin\ChangeCards.class

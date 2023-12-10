@@ -38,13 +38,8 @@ public class ScratchCardServlet extends HttpServlet {
                     request.setAttribute("showGoToCharge", true);
                     String card_number = chModel.getCard(charge);
                     chModel.setCardTaken(card_number);
-                    String message = "Thanks for Charging from YourCart ^_^ <br/>"
-                    + "your cardNumber is : "+card_number + "<br/> with value of : "+charge +"$"
-                    +"<br/> to chare your cart <a href='http://localhost:8084/yourCart/ConfirmScratchCard.jsp'> click here </a>";
-                    User user =(User) request.getSession().getAttribute("LoginUser");
-                    new MailModel(user.getEmail(), "Successfull Payment", message).sendMail();
-                    
-                    nextJSP = "/Success.jsp";
+                    request.setAttribute("cardNumber", card_number);
+                    nextJSP = "/ConfirmScratchCard.jsp";
                     dispatcher = getServletContext().getRequestDispatcher(nextJSP);
                     dispatcher.forward(request, response);
                     break;

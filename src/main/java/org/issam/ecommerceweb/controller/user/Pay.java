@@ -59,7 +59,7 @@ public class Pay extends HttpServlet {
         }
         user.setCash(user.getCash() - total);
         if(new Payment().startPayment(user, productCart)){
-            message = "Thanks for buying from YourCart ^_^ <br/>"
+            message = "Thanks for buying ^_^ <br/>"
                     + "your product will delivered in two days ..";
             
             new MailModel(user.getEmail(), "Successfull Payment", message).sendMail();
